@@ -8,7 +8,7 @@
     "build": "rimraf build && tsc && cpy \"public/**/*\" build/public --parents",
     "start": "node build/src/index.js",
     "start:prod": "npm run build && npm run start",
-    "start:dev": "tsx watch src/index.ts"
+    "start:dev": "PORT=3003 tsx watch src/index.ts"
   },
   "keywords": [
     "api",
